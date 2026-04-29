@@ -16,15 +16,20 @@ After successful subscription, go to [Subscription](https://platform.xiaomimimo.
 - once authenticated you should be on the [/console/api-keys](https://platform.xiaomimimo.com/console/api-keys) page where you can create up to 50 api keys
 - after creating your first key you get a free 0.72$ credit
 
+### API referral (2$ promo)
+I'm on Xiaomi MiMo Open Platform — running Xiaomi's flagship MiMo V2.5 and the rest of the lineup. Sign up with my code and you'll instantly get $2 in API credits. Code: 4WYETC · https://platform.xiaomimimo.com?ref=4WYETC (After signup, enter the code at the bottom-left of the console. Credits valid 40 days.)
+
+
 ## Point ClaudeCode to MIMO api endpoints
 
 Update/Create `~/.claude/settings.json` with the necessary environment variables:
 
 ### For the subscription
+replace your token with the api key found in your [subscription](https://platform.xiaomimimo.com/console/plan-manage) page
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "http://localhost:4141",
+    "ANTHROPIC_BASE_URL": "https://token-plan-sgp.xiaomimimo.com/anthropic",
     "ANTHROPIC_AUTH_TOKEN": "tp-xxxxx",
   }
 }
